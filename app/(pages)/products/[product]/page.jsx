@@ -23,12 +23,15 @@ export default async function Page({ params }) {
         <main className="flex flex-col items-center justify-between min-h-screen p-24">
           <h1 className="text-6xl">{product.name}</h1>
           <p>Brand: {product.brand}</p>
-          <div className="max-w-[350px] h-[400px]">
+          <div className="relative max-w-[350px] h-[400px]">
             <Image
               alt={`image of ${product.name}`}
               src={product.image}
-              width={1700}
-              height={600}
+              width={150}
+              height={200}
+              // fill={true}
+              // layout="insintric"
+              // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover w-full h-full transition hover:blur-none blur-sm"
             />
           </div>
