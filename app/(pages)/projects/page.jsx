@@ -1,4 +1,5 @@
-import { PageHeaderText } from "../../components/base/text/PageHeaderText";
+import { PageHeaderText } from "@/base/text/PageHeaderText";
+import { FancySection } from "./components/FancySection";
 
 export default function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
           sapiente recusandae laboriosam.
         </p>
       </section>
+      <FancySection />
     </>
   );
 }

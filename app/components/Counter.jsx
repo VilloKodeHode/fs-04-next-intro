@@ -20,7 +20,7 @@ export const Counter = () => {
         <CounterButton
           onclick={decrement}
           text="-"
-          className="bg-red-500"
+          className="bg-primary"
         />
 
         <CounterButton

@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page({ params }) {
-  const param = await params.product;
+  const getParam = await params;
+  const param = await getParam.product;
+  console.log(param);
   const product = productData.products[param - 1];
 
   if (!product) {

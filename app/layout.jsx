@@ -1,6 +1,6 @@
 import { Figtree } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Header from "./components/organism/Header";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -15,20 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${figtree.className} antialiased`}>
-        <header className="h-20 flex justify-end px-4 md:px-8 lg:px-12 xl:px-24 items-center">
-          <nav className="flex gap-8">
-            <Link href="/about">
-              <button>About</button>
-            </Link>
-            <Link href="/projects">
-              <button>Projects</button>
-            </Link>
-            <Link href="/contact">
-              <button>Contact</button>
-            </Link>
-          </nav>
-        </header>
+      <body className={`${figtree.className} bg-secondary antialiased`}>
+        <Header />
         <main className="grid justify-center gap-24 px-4 md:px-8 lg:px-12 xl:px-24">
           {children}
         </main>
