@@ -6,14 +6,11 @@ export default async function DynamicPageWithApiFetch({
   param,
   value,
 }) {
-  const domain = process.env.NEXT_PUBLIC_URL;
-  console.log(domain);
-  const data = await fetch(
-    domain ? `domain/api/${endpoint}` : `http://localhost:3000/api/${endpoint}`,
-    {
-      cache: "no-store",
-    }
-  );
+  const baseUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000/";
+  console.log(baseUrl);
+  const data = await fetch(`${baseUrl}/api/${endpoint}`, {
+    cache: "no-store",
+  });
 
   const products = await data.json();
   const product = products[param[value]];
