@@ -5,6 +5,9 @@ export default async function AboutPage() {
   const data = await fetch(`${baseUrl}/api/mongodb`, {
     method: "GET",
     cache: "no-store",
+    // header: {
+    //   "Content-Type": "application/json",
+    // },
     // body: JSON.stringify(),
   });
 
@@ -16,6 +19,9 @@ export default async function AboutPage() {
     <>
       <h1>This is about Sparta!</h1>
       <p>This is the about page</p>
+      {items.map((item) => (
+        <p key={item._id}>{item.name}</p>
+      ))}
     </>
   );
 }
