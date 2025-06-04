@@ -1,10 +1,7 @@
 import ItemList from "@/app/components/molecule/ItemList";
 
 export async function AboutPageItems() {
-  const baseUrl =
-    // process.env.NEXT_PUBLIC_URL
-    // ||
-    "http://localhost:3000/";
+  const baseUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000/";
   const data = await fetch(`${baseUrl}/api/mongodb`, {
     cache: "no-cache",
     method: "GET",
