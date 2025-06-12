@@ -1,6 +1,7 @@
 import { PageHeaderText } from "@/base/text/PageHeaderText";
 import { FancySection } from "./components/FancySection";
 import { client } from "@/app/lib/sanity";
+import Image from "next/image";
 
 export default async function AboutPage() {
   const posts = await client.fetch(
@@ -38,9 +39,11 @@ export default async function AboutPage() {
           <li key={post._id}>
             <h2>{post.title}</h2>
             <p>slug: {post.slug.current}</p>
-            <img
+            <Image
               src={post.image.asset.url}
               alt={post.title}
+              height={800}
+              width={800}
             />
             <p>{post.body}</p>
           </li>
