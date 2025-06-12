@@ -1,3 +1,5 @@
+import ItemList from "@/app/components/molecule/ItemList";
+
 export default async function AboutPage() {
   const baseUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000/";
   console.log(baseUrl);
@@ -5,10 +7,6 @@ export default async function AboutPage() {
   const data = await fetch(`${baseUrl}/api/mongodb`, {
     method: "GET",
     cache: "no-store",
-    // header: {
-    //   "Content-Type": "application/json",
-    // },
-    // body: JSON.stringify(),
   });
 
   // console.log(data);
@@ -19,9 +17,7 @@ export default async function AboutPage() {
     <>
       <h1>This is about Sparta!</h1>
       <p>This is the about page</p>
-      {items.map((item) => (
-        <p key={item._id}>{item.name}</p>
-      ))}
+      <ItemList initialItems={items} />
     </>
   );
 }
