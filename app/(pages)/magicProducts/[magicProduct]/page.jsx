@@ -1,3 +1,4 @@
+// app/(pages)/magicProducts/[magicProduct]/page.jsx
 import DynamicPageWithApiFetch from "@/app/components/organism/DynamicPageWithApiFetch";
 
 export default async function Page({ params }) {

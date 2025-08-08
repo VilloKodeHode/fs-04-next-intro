@@ -1,3 +1,4 @@
+// app/page.jsx
 import { PageHeaderText } from "./components/base/text/PageHeaderText";
 import { Counter } from "./components/Counter";
 

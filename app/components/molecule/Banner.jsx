@@ -1,3 +1,4 @@
+// app/components/molecule/Banner.jsx
 export const Banner = () => {
   return (
     <div className="p-2 bg-slate-800 flex flex-col justify-center items-center gap-4">

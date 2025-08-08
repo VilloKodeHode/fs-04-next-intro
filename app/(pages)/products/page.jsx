@@ -1,3 +1,4 @@
+// app/(pages)/products/page.jsx
 export default function Home() {
   return (
     <>

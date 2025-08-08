@@ -1,3 +1,4 @@
+// app/components/base/buttons/CounterButtons.jsx
 export const CounterButton = ({ onclick, className, text }) => {
   return (
     <button

@@ -1,3 +1,4 @@
+// app/lib/sanity.js
 import { createClient } from "next-sanity";
 export const client = createClient({
   projectId: "oongp9m5",

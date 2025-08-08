@@ -1,3 +1,4 @@
+// app/(pages)/products/[product]/page.jsx
 import productData from "@/app/data/products.json";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,3 +1,4 @@
+// app/(pages)/projects/page.jsx
 import { PageHeaderText } from "@/base/text/PageHeaderText";
 import { FancySection } from "./components/FancySection";
 import { client } from "@/app/lib/sanity";

@@ -1,3 +1,4 @@
+// app/components/molecule/NavBar.jsx
 import { NavItem } from "../atom/NavItem";
 import {
   SignInButton,

@@ -1,3 +1,4 @@
+// app/(pages)/about/page.jsx
 import ItemList from "@/app/components/molecule/ItemList";
 
 export async function AboutPageItems() {

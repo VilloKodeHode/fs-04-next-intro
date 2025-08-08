@@ -1,3 +1,4 @@
+// app/(pages)/fakerProducts/[products]/page.jsx
 import Image from "next/image";
 import Link from "next/link";
 

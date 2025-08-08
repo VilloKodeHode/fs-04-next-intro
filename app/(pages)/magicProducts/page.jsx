@@ -1,3 +1,4 @@
+// app/(pages)/magicProducts/page.jsx
 export default function MagicMainPage() {
   return (
     <>

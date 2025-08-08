@@ -1,3 +1,4 @@
+// app/layout.jsx
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Header from "./components/organism/Header";

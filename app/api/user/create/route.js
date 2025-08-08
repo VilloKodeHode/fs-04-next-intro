@@ -1,3 +1,4 @@
+// app/api/user/create/route.js
 import { connectToDatabase } from "@/app/lib/mongoDBconnect";
 import { auth } from "@clerk/nextjs/server";
 

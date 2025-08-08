@@ -1,3 +1,4 @@
+// app/components/atom/NavItem.jsx
 import Link from "next/link";
 
 export const NavItem = ({ text, href }) => {

@@ -1,3 +1,4 @@
+// app/components/atom/Onboarding.jsx
 "use client";
 
 import { useUser } from "@clerk/nextjs";

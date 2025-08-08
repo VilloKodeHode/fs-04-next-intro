@@ -1,3 +1,4 @@
+// app/components/Counter.jsx
 "use client";
 
 import { useState } from "react";
