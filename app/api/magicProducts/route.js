@@ -1,6 +1,9 @@
 // app/api/magicProducts/route.js
+// This API route handles GET requests and returns a static list of magic product objects as JSON.
+// Each product has an id, title, category, image, price, description, and stock.
 import { NextResponse } from "next/server";
 
+// Handles GET requests: returns a hardcoded list of magic products
 export async function GET() {
   return NextResponse.json([
     {

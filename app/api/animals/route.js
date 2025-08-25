@@ -1,6 +1,9 @@
 // app/api/animals/route.js
+// This API route handles GET requests and returns a static list of animal objects as JSON.
+// Each animal has an id, name, species, image, and description.
 import { NextResponse } from "next/server";
 
+// Handles GET requests: returns a hardcoded list of animals
 export async function GET() {
   return NextResponse.json([
     {
